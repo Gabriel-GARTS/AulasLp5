@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package tools;
+import java.util.Date;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
@@ -36,6 +37,32 @@ public class Util {
     
     public static void perguntar(String cad) {
         JOptionPane.showConfirmDialog(null, cad); 
+       // return true;
+    }
+    
+    
+    
+    public static  int strToInt(String num ){
+        return Integer.valueOf(num);
+    }
+    
+    public static String intToStr(int num){
+    return String.valueOf(num);
+    }
+    
+    public static String doubleToStr(int num){
+    return "";
+    }
+    
+    public static String strToDouble(String num){
+    return null;
+    }
+    
+     public static Date strToDate(String data){
+        return null;
+    }
+    public static String dateToStr(Date data){
+        return "";
     }
     
 }
