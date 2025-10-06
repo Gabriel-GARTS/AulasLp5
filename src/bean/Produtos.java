@@ -2,7 +2,7 @@ package bean;
 // Generated 15/09/2025 07:57:47 by Hibernate Tools 4.3.1
 
 
-import java.math.BigDecimal;
+
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;
@@ -24,9 +24,9 @@ public class Produtos  implements java.io.Serializable {
 
      private int idprodutos;
      private String nome;
-     private BigDecimal valorUnitario;
-     private Integer grupo;
-     private Set pedidosProdutoses = new HashSet(0);
+     private double valorUnitario;
+     private int grupo;
+     
 
     public Produtos() {
     }
@@ -35,12 +35,12 @@ public class Produtos  implements java.io.Serializable {
     public Produtos(int idprodutos) {
         this.idprodutos = idprodutos;
     }
-    public Produtos(int idprodutos, String nome, BigDecimal valorUnitario, Integer grupo, Set pedidosProdutoses) {
+    public Produtos(int idprodutos, String nome, double valorUnitario, int grupo) {
        this.idprodutos = idprodutos;
        this.nome = nome;
        this.valorUnitario = valorUnitario;
        this.grupo = grupo;
-       this.pedidosProdutoses = pedidosProdutoses;
+      
     }
    
      @Id 
@@ -67,34 +67,23 @@ public class Produtos  implements java.io.Serializable {
 
     
     @Column(name="valorUnitario", precision=10)
-    public BigDecimal getValorUnitario() {
+    public double getValorUnitario() {
         return this.valorUnitario;
     }
     
-    public void setValorUnitario(BigDecimal valorUnitario) {
+    public void setValorUnitario(double valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
 
     
     @Column(name="grupo")
-    public Integer getGrupo() {
+    public int getGrupo() {
         return this.grupo;
     }
     
-    public void setGrupo(Integer grupo) {
+    public void setGrupo(int grupo) {
         this.grupo = grupo;
     }
-
-@OneToMany(fetch=FetchType.LAZY, mappedBy="produtos")
-    public Set getPedidosProdutoses() {
-        return this.pedidosProdutoses;
-    }
-    
-    public void setPedidosProdutoses(Set pedidosProdutoses) {
-        this.pedidosProdutoses = pedidosProdutoses;
-    }
-
-
 
 
 }
