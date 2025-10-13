@@ -4,6 +4,7 @@
  */
 package view;
 
+
 import bean.Usuarios;
 import dao.UsuariosDAO;
 import java.util.List;
@@ -129,6 +130,12 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

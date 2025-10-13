@@ -47,27 +47,27 @@ public class Util {
     
     
     
-    public static  int strToInt(String num ){
+     public static int strToInt(String num) {
         return Integer.valueOf(num);
     }
-    
-    public static String intToStr(int num){
-    return String.valueOf(num);
+    public static String intToStr(int num) {
+        return String.valueOf(num);
     }
     
-    public static String doubleToStr(int num){
-    return "";
+    public static double strToDouble(String num) {
+        return 0;
     }
-    
-    public static String strToDouble(String num){
-    return null;
-    }
-    
-     public static Date strToDate(String data){
-        return null;
-    }
-    public static String dateToStr(Date data){
+    public static String doubleToStr(double num) {
         return "";
     }
     
+    public static Date strToDate(String num) {
+        return null;
+    }
+    public static String dateToStr(Date num) {
+        return "";
+    }    
 }
+
+    
+

@@ -11,9 +11,9 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author u05594757139
+ * @author u09240620109
  */
-public class ControllerUsuarios  extends AbstractTableModel {
+public class ControllerUsuarios extends AbstractTableModel{
 
     private List lstUsuarios;
 
